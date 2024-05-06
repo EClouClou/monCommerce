@@ -1,13 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca-FR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./app.js" defer></script>
-    <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/CSS/theme/fonts.css">
+    <link rel="stylesheet" href="./assets/CSS/theme/animations.css">
+    <link rel="stylesheet" href="./assets/CSS/theme/default.css">
+    <link rel="stylesheet" href="./assets/CSS/compoments/banner.css">
+    <link rel="stylesheet" href="./assets/CSS/compoments/buttons.css">
+    <link rel="stylesheet" href="./assets/CSS/compoments/dialog.css">
+    <link rel="stylesheet" href="./assets/CSS/compoments/header.css">
+    <link rel="stylesheet" href="./assets/CSS/compoments/boutique.css">
+    <script src="./JS/app.js" defer></script>
+    <script src="./JS/dialog.js" defer></script>
+    <script src="./JS/boutique.js" defer></script>
+    <title>Coffee | Accueil</title>
 </head>
 <body>
-    
+    <header class="header">
+        <section class="shipping">
+            <h3>Livraison gratuite pour les commandes de plus de 35&nbsp;$&#x202F;!</h3>
+        </section>
+        <section class="header-nav">
+            <img class="logo"src="./assets/IMG/logo.svg" alt="logo">
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="#">BOUTIQUE</a></li>
+                    <li><a href="#">HISTOIRE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">RECETTES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <button data-dialog="#menu-mobile" type="button" class="menu-burger__container">
+                    <img class="burger" src="./assets/IMG/menu-burger.svg" alt="menu-burger">
+                </button>
+                <div class="icons-nav">
+                    <img src="./assets/IMG/search_FILL0_wght400_GRAD0_opsz24.svg" alt="icône de recherche">
+                    <img src="./assets/IMG/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="icône de panier d'achat">
+                </div>
+            </nav>
+        </section>
+        <div
+            id="menu-mobile"
+            class="dialog header__menu-dialog"
+            aria-role="dialog">
+                <section class="overlay--close">
+                    <nav class="burger-nav">
+                        <button data-dialog="#menu-mobile" class="burger-nav__btn--close">X</button>
+                        <ul>
+                            <li><a href="#">BOUTIQUE</a></li>
+                            <li><a href="#">HISTOIRE</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">RECETTES</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </section>
+        </div>
+    </header>
+    <main>
+        <section class="banner__general">
+            <div class="banner">
+                <div class="banner__left">
+                    <div class="banner__left_content">
+                        <h1>Goûtez à nos cafés!</h1>
+                        <p>At flavour aroma, sugar cinnamon americano crema ut wings grounds. Cortado, that sugar, single origin grounds eu spoon percolator.</p>
+                        <button class="btn banner">En savoir plus</button>
+                    </div>
+                </div>
+                <div class="banner__right">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="./assets/IMG/cafe.svg"/>
+                        <source media="(min-width: 768px)" srcset="./assets/IMG/cafe.svg"/>
+                        <img class="banner__img" src="./assets/IMG/cafe.svg" alt="Sac de café">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="boutique_general">
+            <h2>Menu</h2>
+            <div class="boutique">
+                <div class="boutique-container">
+            </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

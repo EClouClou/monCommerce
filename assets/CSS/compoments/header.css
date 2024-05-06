@@ -1,0 +1,174 @@
+/*Mon header sera par-desssus le main
+.header {
+    height: 0;
+    display: flex;
+    flex-direction: column;
+}*/
+
+.shipping {
+    margin: 0;
+    background-color: var(--green-color);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.shipping h3 {
+    margin: 0;
+    font-family: "Poppins light";
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    color: var(--offWhite-color);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-color);
+}
+
+.logo {
+    max-width: 70px;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav ul {
+    display: flex;
+    font-family: "Poppins bold";
+    font-weight: 700;
+    gap: 1rem;
+    list-style: none;
+}
+
+.top-nav ul li {
+    display: none;
+}
+
+.top-nav a {
+    color: var(--offWhite-color);
+    text-decoration: none;
+}
+
+.top-nav a:hover {
+    color: var(--green-color);
+}
+
+.burger {
+    padding: 0;
+    cursor: pointer;
+}
+
+.icons-nav {
+    display: flex;
+    gap: 1rem;
+    background-color: var(--offWhite-color);
+    padding: 1.2rem;
+    cursor: pointer;
+}
+
+.icons-nav img:hover {
+    filter: drop-shadow(0 0 0.75rem var(--black-color));
+}
+
+.overlay--close {
+    background-color: var(--offWhite-color);
+    height: 100%;
+    max-width: min(30rem, calc(100% - 3rem));
+
+}
+
+.dialog[open] .burger-nav {
+    animation: slideInLeft 0.3s forwards;
+}
+
+.dialog[closing] .burger-nav {
+    animation: slideOutLeft 0.3s forwards;
+}
+
+.burger-nav {
+    width: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.burger-nav ul {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins bold";
+    font-weight: 700;
+    gap: 20px;
+    list-style: none;
+}
+
+.burger-nav a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.burger-nav a:hover {
+    color: var(--chocolate-color);
+}
+
+.burger-nav__btn--close {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+/*tablette*/
+@media screen and (min-width: 768px) {
+
+    .shipping h3 {
+        font-size: calc(1.1rem + 0.25vw);
+        transition: 0.25s;
+    }
+
+    #menu-mobile {
+        display: none;
+        height: 0.1rem;
+    }
+    .menu-burger__container {
+        display: none;
+    }
+
+    .top-nav {
+        gap: 1rem;
+    }
+
+    .top-nav ul li {
+        display: flex;
+    }
+
+    .logo {
+        max-width: 80px;
+        transition: 0.25s;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+}
+
+/*desktop*/
+@media screen and (min-width: 1024px){
+    .shipping h3 {
+        font-size: 1.25rem;
+        transition: 0.25s;
+    }
+}
+
+/*desktop XL*/
+@media screen and (min-width: 1280px){
+    .shipping h3{
+        transition: 0.25s;}
+
+}

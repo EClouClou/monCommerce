@@ -1,0 +1,71 @@
+.banner__general {
+    display: flex;
+    justify-content: center;
+    background-color: var(--offWhite-color);
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.banner__left {
+    display: flex;
+    justify-content: center;
+    order: 2;
+}
+
+.banner__left_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+.banner__right {
+    display: flex;
+    justify-content: center;
+    order:1;
+}
+
+.banner__img {
+    max-width: min(100%, 900px);
+    width: 100%;
+}
+
+.btn.banner {
+    font-family: "Poppins extra bold";
+    font-weight: 800;
+    color: var(--green-color);
+    border: none;
+    background-color: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    .banner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .banner__left {
+        order: 1;
+    }
+
+    .banner__right {
+        order: 2;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+
+    .banner {
+        max-width: 1000px;
+    }
+
+}

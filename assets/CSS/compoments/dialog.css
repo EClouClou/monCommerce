@@ -1,0 +1,18 @@
+.dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.dialog[open] {
+    display: block;
+    animation: fadeIn 0.2s forwards;
+}
+
+.dialog[closing] {
+    animation: fadeOut 0.2s forwards;
+}
