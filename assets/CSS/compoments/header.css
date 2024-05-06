@@ -31,7 +31,7 @@
 
 .logo {
     max-width: 70px;
-    padding-left: 1rem;
+    padding-left: 3rem;
     cursor: pointer;
 }
 
@@ -70,7 +70,7 @@
     display: flex;
     gap: 1rem;
     background-color: var(--offWhite-color);
-    padding: 1.2rem;
+    padding: 1.2rem 2rem 1rem 1rem;
     cursor: pointer;
 }
 
